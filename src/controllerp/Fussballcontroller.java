@@ -22,6 +22,22 @@ public class Fussballcontroller {
     }
 
     public void setPlayerName(String newPlayerName){
-         = newPlayerName;
+         modell.setPlayerName(newPlayerName);
+    }
+
+    public String getPlayerName(){
+        return modell.getPlayerName();
+    }
+
+    public void setPlayerPosition(String newPlayerPosition){
+        modell.setPlayerPosition(newPlayerPosition);
+    }
+
+    public String getPlayerPosition(){
+        return modell.getPlayerPosition();
+    }
+
+    public void updateView(){
+        view.fussballviewdetails(modell.getPlayerId() , modell.getPlayerName(), modell.getPlayerPosition());
     }
 }
